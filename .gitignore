@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+.ipynb_checkpoints/
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+.env
+.venv
+env/
+venv/
+ENV/
+
+loan_default_model.pkl
