@@ -13,7 +13,7 @@ X = df.drop("Default", axis=1)
 y = df["Default"]
 
 # 3. Convert categorical columns exactly like the notebook
-categorical_cols = X.select_dtypes(include="object").columns.tolist()
+categorical_cols = X.select_dtypes(include=["object", "string"]).columns.tolist()
 X = pd.get_dummies(
     X,
     columns=categorical_cols,
